@@ -7,13 +7,37 @@
   --another-accent-color: #ffffff;
   --logo-color: #000000;
   --btn-hover-color: #188CE8;
+  --contacts-footer-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   background-color: var(--another-accent-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* Хедер */
@@ -26,7 +50,7 @@ header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
 }
 
 .logo1 {
@@ -40,8 +64,7 @@ header {
 .site-nav-link {
   color: var(--secondary-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -53,13 +76,10 @@ header {
 .contacts-tel {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.logo:hover,
-.logo:focus,
 .site-nav-link:hover,
 .site-nav-link:focus,
 .contacts-mail:hover,
@@ -80,7 +100,7 @@ header {
   color: var(--another-accent-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -92,7 +112,7 @@ header {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -100,7 +120,7 @@ header {
 
 .hero-button:hover,
 .hero-button:focus {
-    color: var(--btn-hover-color);
+    background-color: var(--btn-hover-color);
 }
 
 /* Остальное Студия*/
@@ -114,20 +134,19 @@ header {
 
 .particulars-title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
 .particulars-text {
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
 }
 
 .task {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 17;
+  line-height: 1.17;
   text-align: center;
 }
 
@@ -138,32 +157,40 @@ header {
 .team {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 17;
+  line-height: 1.17;
   text-align: center;
 }
 
 .team-member {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 19;
+  line-height: 1.19;
   text-align: center;
 }
 
 .team-job {
   font-size: 16px;
-  line-height: 1, 19;
+  line-height: 1.19;
   text-align: center;
 }
 
 /* Главное содержимое Портфолио */
 
 .btn {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 63;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--another-accent-color);
+    background-color: var(--accent-color);
 }
 
 .portfolio-list-name {
@@ -177,7 +204,7 @@ header {
 .portfolio-list-filter {
   color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
 }
 
 /* Футер */
@@ -204,18 +231,15 @@ footer {
 
 .address-text {
   color: var(--another-accent-color);
-  font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
 }
 
 .address-mail {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1, 71;
+  color: var(--contacts-footer-color);
+  line-height: 1.71;
 }
 
 .address-tel {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1, 71;
+  color: var(--contacts-footer-color);
+  line-height: 1.71;
 }
